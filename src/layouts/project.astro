@@ -1,8 +1,6 @@
 ---
 import MainHead from '../components/MainHead.astro';
-import Button from '../components/Button/index.jsx';
 import Footer from '../components/Footer/index.jsx';
-import Nav from '../components/Nav/index.jsx';
 
 const { content } = Astro.props;
 ---
@@ -65,10 +63,25 @@ const { content } = Astro.props;
 				font-size: var(--f-u1);
 				line-height: 2.2;
 			}
+			.return {
+				position: fixed;
+				width: 40px;
+				font-weight: 500;
+				margin: 20px;
+			}
+			svg {
+				color: black;
+			}
 		</style>
 	</head>
 	<body>
-		<Nav />
+		<div class="return">
+			<a href="/">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+				</svg>
+			</a>
+		</div>
 		<header style={`background-image:url(${content.img})`} class="hero">
 			<h1 class="title">{content.title}</h1>
 		</header>
@@ -81,11 +94,11 @@ const { content } = Astro.props;
 		<div class="wrapper wrapper__readable">
 			<div class="content"><slot /></div>
 		</div>
-		<footer class="tac mt6">
+		<!-- <footer class="tac mt6">
 			<a href="/projects">
 				<Button>View More</Button>
 			</a>
-		</footer>
+		</footer> -->
 		<Footer />
 	</body>
 </html>

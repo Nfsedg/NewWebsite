@@ -1,7 +1,13 @@
 .button {
-	display: inline-block;
+	display: flex;
+	width: 190px;
 	border: 3px solid currentColor;
 	padding: 0.5em 1em;
 	font-weight: 700;
 	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+}
+.button :first-child{
+	margin-left: 10px;
 }
