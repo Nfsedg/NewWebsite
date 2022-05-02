@@ -3,12 +3,11 @@ import Styles from './styles.module.scss';
 
 function PortfolioPreview ({ project }) {
 	const { frontmatter } = project;
-	const bgKey = import.meta.env.SITESHOT_USER_KEY;
 
 	return (
 		<div className='w-full'>
 			<div className={Styles.card}>
-				<div className={Styles.titleCard} style={`background-image:url(https://api.site-shot.com/?url=${frontmatter.url}&userkey=${bgKey})`}>
+				<div className={Styles.titleCard} style={`background-image:url(${frontmatter.img})`}>
 					<div>
 						<h1 className={Styles.title}>{frontmatter.title}</h1>
 					</div>
@@ -23,7 +22,7 @@ function PortfolioPreview ({ project }) {
 							</div>
 						))}
 					</div>
-					<a className={Styles.link} href={project.url}>
+					<a className={Styles.link} href={project.url} target='_blank'>
 						<span className={Styles.linkInner}>View</span>
 					</a>
 				</div>

@@ -4,7 +4,7 @@ title: My first website
 client: Self
 publishDate: 2020-03-02 00:00:00
 url: https://nfsedg.github.io/Webpage/
-img: https://images.unsplash.com/photo-1547234935-80c7145ec969?fit=crop&w=1400&h=700&q=75
+img: https://i.imgur.com/TK7vuLL.png
 description: |
   My first portfolio website, with my firsts proyects.
 tags:

@@ -4,7 +4,7 @@ title: The New SocialMedia
 client: Self
 publishDate: 2020-03-02 00:00:00
 url: https://the-new-social-media-app.vercel.app
-img: https://images.unsplash.com/photo-1547234935-80c7145ec969?fit=crop&w=1400&h=700&q=75
+img: https://i.imgur.com/B1dr3i2.png
 description: |
   I build a simple app to post information and own API, created with React JS, Express and MongoDB.
 tags:
